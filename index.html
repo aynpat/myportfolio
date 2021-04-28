@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <button id="action">Reveal</button>
+<svg id="demo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+
+  <defs>
+<clipPath id="theClipPath">
+  <rect class="reveal" x="0" y="-100" width="1000" height="250" fill="#000" />
+</clipPath>  
+</defs> 
+  
+<line class="reveal" x1="500" y1="150" x2="500" y2="150" stroke-width="1.5" stroke="white"/>
+ 
+<g id="clipPathReveal" clip-path="url(#theClipPath)">
+  <text transform="translate(500 250)" fill="#f5f2f5" text-anchor="middle" font-size="100">Patrick T. Gauran</text> 
+</g>
+</svg>
+</body>
+<script src="./app.js"></script>
+</html>
